@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HomeWork11-12</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="http://nickblack.pro/send.php" method="POST" id="form">
+        <fieldset>
+            <legend>HomeWork (11-12)</legend>
+            <p class="input-block">            
+                <label for="name">Имя<em>*</em></label>
+                <input type="text" name="fname" required  id="name" autofocus>              
+            </p>
+            <p class="input-block">
+                <label for="last-name">Фамилия<em>*</em></label>
+                <input type="text" name="sname" required id="last-name">
+            </p>             
+            <p class="input-block">
+                <label for="mail">Введите эл. почту</label>
+                <input type="email"  name="mail" id="mail">
+            </p>
+            <p class="input-block">
+                <label for="d-birth">Дата Вашего рождения</label>
+                <input type="date" name="bday" id="d-birth">
+            </p>
+            <p class="input-block">
+                <label for="phone">Номер телефона<em>*</em></label>
+                <input type="tel" required placeholder="380501234567" pattern="[0-9]{12}" maxlength="12" name="phone">
+            </p>
+            <p class="input-block age-block">
+                <label for="age">Ваш возраст</label>
+                <input type="number" min="1" max="100" placeholder="1-100" id="age" name="age">
+            </p>
+            <p>
+                <label for="recipient">Email получателя</label>
+                <input type="email" value="andrey.beloc@gmail.com" required readonly name="mymail" id="recipient">
+            </p>
+            <p>
+                <input type="submit" value="Отослать">
+                <!--<button type="submit"  name="button">Отослать</button>-->
+            </p>
+
+        </fieldset>        
+    </form>
+    
+</body>
+</html>

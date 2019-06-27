@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap&subset=cyrillic');
+
+@font-face {
+    font-family: 'gomo';
+    src: url('font/14646-webfont.woff2') format('woff2');         
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#form{
+    width: 500px;
+    margin: 50px auto;
+
+}
+
+em{
+    color: #c80b0b;
+}
+
+legend{
+    font-size: 18;
+    font-family: 'gomo';
+}
+
+.input-block{
+    width: 400px;    
+    border-bottom: 2px solid #e9e9e9;        
+}
+
+label{
+    margin: 0 10px 0 10px;
+    letter-spacing: 1px;
+    color: #6c6a6a;
+    cursor: pointer;
+}
+
+input{
+    border: none; 
+    width: 100%;   
+    height: 30px;
+    background: transparent;
+    color: #3424b0;
+    font-style: italic;
+    cursor: pointer; 
+}
+input:focus{
+    outline: none;
+}
+
+/*---age----*/
+#age{
+    width: 30%;
+    border: 2px solid #e9e9e9;
+    border-radius: 12px;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+.age-block{
+    border:none;
+}
+/*---email  получателя---*/
+#recipient{
+    width: 60%;
+}
+/*----button---*/
+input[type="submit"]{
+    width: 30%;
+    height: 50px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #000;
+    background: transparent;
+}
+
+input[type="submit"]:hover{
+    background: #c99ac6;
+}
+
+input[type="submit"]:active{
+    background: #aa5d5d
+}
